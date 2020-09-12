@@ -14,12 +14,12 @@
 	overflow: hidden;
 }
 
-@mixin transition($duration) {
-  -webkit-transition: $duration ease all;
-  -moz-transition: $duration ease all;
-  -ms-transition: $duration ease all;
-  -o-transition: $duration ease all;
-  transition: $duration ease all;
+@mixin transition($duration, $option) {
+  -webkit-transition: $duration ease $option;
+  -moz-transition: $duration ease $option;
+  -ms-transition: $duration ease $option;
+  -o-transition: $duration ease $option;
+  transition: $duration ease $option;
 }
 
 @mixin transform-rotate($deg) {

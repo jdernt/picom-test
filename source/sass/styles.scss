@@ -24,6 +24,10 @@ a {
 	text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .background {
   background: url('../img/main_bg.svg') 50%;
 }

@@ -24,7 +24,7 @@
     height: 52px;
     width: 113px;
     border: 1px solid #BDBDBD;
-    @include transition(0.3s);
+    @include transition(0.4s, all);
 
     &:nth-child(1) {
       border-radius: 5px 0 0 5px;
@@ -40,7 +40,7 @@
     height: 16px;
     width: 10px;
     opacity: 0.3;
-    @include transition(0.3s);
+    @include transition(0.3s, all);
   }
 
   &__arrow-left {
@@ -55,7 +55,6 @@
     display: inline-block;
     font-family: $font-family;
     font-size: 16px;
-    @include transition(0.3s);
   }
 
   &__left {
@@ -72,7 +71,6 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    @include transition(0.3s);
   }
 
   &__item {

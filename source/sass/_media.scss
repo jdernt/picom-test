@@ -222,13 +222,6 @@
       margin-top: 32px;
     }
 
-    &__item {
-      // width: 90vw;
-      &:not(:last-child) {
-        // margin-right: 10px;
-      }
-    }
-
     &__article {
       width: 90vw;
     }
@@ -367,7 +360,7 @@
     }
 
     &__grid {
-      zoom: 0.4;
+      zoom: 0.44;
     }
   }
 

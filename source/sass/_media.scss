@@ -219,6 +219,9 @@
 
     &__item {
       width: 90vw;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
     }
   }
 }
@@ -317,15 +320,15 @@
   .team {
     &__item {
       &:nth-child(1) {
-        zoom: 0.9;
+        zoom: 0.85;
       }
 
       &:nth-child(2) {
-        zoom: 0.75;
+        zoom: 0.7;
       }
 
       &:nth-child(3) {
-        zoom: 0.7;
+        zoom: 0.65;
       }
     }
   }

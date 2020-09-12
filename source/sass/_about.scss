@@ -1,0 +1,44 @@
+.about {
+  margin-bottom: 98px;
+
+  &__container {
+    max-width: 897px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 24.5px;
+  }
+
+  &__article {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 37px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  &__text {
+    padding-right: 41px;
+    font-weight: 400;
+    text-align: left;
+    column-count: 2;
+    column-gap: 41px;
+  }
+}

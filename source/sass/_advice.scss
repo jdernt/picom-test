@@ -1,0 +1,114 @@
+.advice {
+  min-height: 720px;
+  margin-bottom: 92px;
+  background: url('../img/advice_bg_1.svg') right 192px no-repeat,
+  url('../img/advice_bg_2.svg') 0 192px no-repeat,
+  url('../img/advice_bg_3.svg') 0 -120px no-repeat,
+  url('../img/advice_bg_3.svg') 271px 150px no-repeat,
+  url('../img/advice_bg_3.svg') 542px 420px no-repeat,
+  url('../img/advice_bg_3.svg') 843px 720px no-repeat,
+  url('../img/advice_bg_3.svg') 1044px 920px no-repeat;
+  background-color: $advice-bg;
+
+  &__container {
+    @include flex-center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 67px 48px 0 48px;
+  }
+
+  &__descr {
+    max-width: 600px;
+    margin-top: 5px;
+  }
+
+  &__grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    padding-top: 60px;
+    padding-left: 15px;
+  }
+
+  &__item {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    @include transform-rotate(45deg);
+
+    &:nth-child(2), &:nth-child(4) {
+      height: 311px;
+      width: 311px;
+      top: 30px;
+    }
+
+    &:nth-child(6) {
+      top: -199px;
+      left: -114px;
+    }
+
+    &:nth-child(7) {
+      top: -87px;
+      left: -149px;
+    }
+
+    &:nth-child(8) {
+      top: -87px;
+      left: 161px;
+    }
+
+    &:nth-child(9) {
+      top: -87px;
+      left: 473px;
+    }
+
+    &:nth-child(10) {
+      top: -199px;
+      left: 438px;
+    }
+  }
+
+  &__link {
+    @include flex-center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    @include transition(0.3s);
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.42, 1.42) rotate(-45deg);
+    // -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    // clip-path: url("#clip-diamond-demo");
+    z-index: -1;
+  }
+
+  &__text {
+    max-height: 68%;
+    max-width: 68%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    opacity: 0;
+    @include transition(0.5s);
+    @include transform-rotate(-45deg);
+  }
+}
+
+.advice__item:hover .advice__link {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.advice__item:hover .advice__text {
+  opacity: 1;
+}

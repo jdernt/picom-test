@@ -1,0 +1,47 @@
+.team {
+  margin-bottom: 92px;
+  background: url('../img/team_bg_1.svg') no-repeat,
+  url('../img/team_bg_2.svg') 100% 0 no-repeat;
+  background-color: $team-bg;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 36px;
+  }
+
+  &__title {
+    max-width: 56px;
+    transform: rotate(-90deg) translate(-250%, 0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 196px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+
+    &:nth-child(1) {
+      margin-top: 88px;
+      margin-left: 1.2vw;
+      z-index: 3;
+    }
+
+    &:nth-child(2) {
+      margin-top: -188px;
+      margin-left: 15.2vw;
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      margin-top: -500px;
+      margin-left: 36.2vw;
+    }
+  }
+}

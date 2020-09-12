@@ -185,7 +185,12 @@
   }
 
   .advice {
+    min-height: 0;
     margin-bottom: 55px;
+
+    &__container {
+      padding-bottom: 60px;
+    }
 
     &__grid {
       width: 690px;
@@ -218,10 +223,14 @@
     }
 
     &__item {
-      width: 90vw;
+      // width: 90vw;
       &:not(:last-child) {
-        margin-right: 10px;
+        // margin-right: 10px;
       }
+    }
+
+    &__article {
+      width: 90vw;
     }
   }
 }
@@ -355,6 +364,10 @@
   .advice {
     &__title {
       font-size: 24px;
+    }
+
+    &__grid {
+      zoom: 0.4;
     }
   }
 

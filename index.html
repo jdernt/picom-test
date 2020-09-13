@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" href="build/css/styles.css">
   <title>Document</title>
 </head>
@@ -171,93 +172,95 @@
         </ul>
       </div>
     </section>
-    <section class="reviews slider" id="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__container container">
         <h2 class="reviews__title title">
           Отзывы
         </h2>
-        <div class="reviews__buttons slider__control_left">
-          <button class="reviews__btn button left-btn">
+        <div class="reviews__buttons">
+          <button class="reviews__btn button left-btn slick-prev slick-arrow" data-role="none" aria-label="Previous" role="button">
             <span class="reviews__arrow-left"></span>
             <span class="reviews__left">Left</span>
           </button>
-          <button class="reviews__btn button right-btn slider__control_right slider__control_show">
+          <button class="reviews__btn button right-btn slick-next slick-arrow" data-role="none" aria-label="Next" role="button">
             <span class="reviews__right">Right</span>
             <span class="reviews__arrow-right"></span>
           </button>
         </div>
-        <ul class="reviews__list slider__wrapper">
-          <li class="reviews__item slider__item">
-            <article class="reviews__article">
-              <span class="reviews__number"></span>
-              <h3 class="reviews__subtitle subtitle">
-                Иван Иванов
-              </h3>
-              <div class="reviews__card">
-                <p class="reviews__text">
-                  <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
-                  Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="reviews__item slider__item">
-            <article class="reviews__article">
-              <span class="reviews__number"></span>
-              <h3 class="reviews__subtitle subtitle">
-                Иван Иванов
-              </h3>
-              <div class="reviews__card">
-                <p class="reviews__text">
-                  <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
-                  Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="reviews__item slider__item">
-            <article class="reviews__article">
-              <span class="reviews__number"></span>
-              <h3 class="reviews__subtitle subtitle">
-                Иван Иванов
-              </h3>
-              <div class="reviews__card">
-                <p class="reviews__text">
-                  <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
-                  Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="reviews__item slider__item">
-            <article class="reviews__article">
-              <span class="reviews__number"></span>
-              <h3 class="reviews__subtitle subtitle">
-                Иван Иванов
-              </h3>
-              <div class="reviews__card">
-                <p class="reviews__text">
-                  <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
-                  Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="reviews__item slider__item">
-            <article class="reviews__article">
-              <span class="reviews__number"></span>
-              <h3 class="reviews__subtitle subtitle">
-                Иван Иванов
-              </h3>
-              <div class="reviews__card">
-                <p class="reviews__text">
-                  <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
-                  Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
-                </p>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <div class="reviews__comments">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <span class="reviews__number"></span>
+                <h3 class="reviews__subtitle subtitle">
+                  Иван Иванов
+                </h3>
+                <div class="reviews__card">
+                  <p class="reviews__text">
+                    <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
+                    Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <span class="reviews__number"></span>
+                <h3 class="reviews__subtitle subtitle">
+                  Иван Иванов
+                </h3>
+                <div class="reviews__card">
+                  <p class="reviews__text">
+                    <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
+                    Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <span class="reviews__number"></span>
+                <h3 class="reviews__subtitle subtitle">
+                  Иван Иванов
+                </h3>
+                <div class="reviews__card">
+                  <p class="reviews__text">
+                    <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
+                    Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <span class="reviews__number"></span>
+                <h3 class="reviews__subtitle subtitle">
+                  Иван Иванов
+                </h3>
+                <div class="reviews__card">
+                  <p class="reviews__text">
+                    <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
+                    Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews__article">
+                <span class="reviews__number"></span>
+                <h3 class="reviews__subtitle subtitle">
+                  Иван Иванов
+                </h3>
+                <div class="reviews__card">
+                  <p class="reviews__text">
+                    <img src="build/img/reviews_img.jpg" alt="" class="reviews__img">
+                    Получил заказ (камера+объектив), проверил работоспособность, вроде все было нормально. По&nbsp;прошествии трех недель вышел с&nbsp;камерой первый раз поработать на&nbsp;практике и&nbsp;при днев- номсвете обнаружил на&nbsp;объективе небольшой дефект (на&nbsp;краю внутренней линзы какой-то странный след, подтек от&nbsp;смазки или т.п.). Я&nbsp;не&nbsp;знаю, был он&nbsp;изначально и&nbsp;я&nbsp;не&nbsp;заметил или проявился лишь спустя время, но&nbsp;поскольку камеру после получения в&nbsp;СДЭК и&nbsp;до&nbsp;момента обнаружения дефекта даже в&nbsp;руки не&nbsp;брал, исключаю возможность того, что это возникло в&nbsp;результате моих действий. Ну&nbsp;подумал, неприятно, объектив то&nbsp;ведь новый, напишу в&nbsp;магазин, посмотрю, что они скажут. И&nbsp;вот честно говоря даже не&nbsp;столько огорчен этим косяком на&nbsp;объективе, сколько высокомерным и&nbsp;неуважительным поведением менеджеров магазина в&nbsp;этой ситуации.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -387,6 +390,30 @@
       </footer>
     </div>
   </div>
-  <script src="source/js/main.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="build/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.reviews__list').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.left-btn'),
+        nextArrow: $('.right-btn'),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+        ]
+      });
+    });
+  </script>
 </body>
 </html>

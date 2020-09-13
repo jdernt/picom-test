@@ -30,6 +30,9 @@
   transform: rotate($deg)
 }
 
-@function vw($value, $base: 1440px) {
-  @return $value / $base * 100vw;
+@mixin zoom($value) {
+  zoom: $value;
+  -ms-zoom: $value;
+  -webkit-zoom: $value;
+  -moz-transform: scale($value,$value);
 }

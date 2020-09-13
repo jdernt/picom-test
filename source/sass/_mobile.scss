@@ -6,7 +6,7 @@
   max-width: 100vw;
   height: 100vh;
   z-index: 10;
-  @include transition(0.5s, left);
+  @include transition(0.5s, all);
 
   .menu {
     display: flex;
@@ -78,5 +78,5 @@
 
 .transform-mobile {
   left: 0;
-  background-color: #33333360;
+  background-color: rgba(51, 51, 51, 0.6);
 }

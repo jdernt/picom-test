@@ -67,19 +67,22 @@
     text-align: left;
   }
 
-  &__list {
-    display: flex;
+  &__comments {
+    position: relative;
     width: 100%;
+    margin-right: 35px;
     overflow: hidden;
   }
 
-  &__item {
-    display: inline-block;
-    min-width: 640px;
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include transition(0.5s, all);
+  }
 
-    &:not(:last-child) {
-      margin-right: 32px;
-    }
+  &__item {
+    margin-right: 32px;
   }
 
   &__article {
@@ -127,5 +130,25 @@
 .reviews__btn:hover .reviews__arrow-left,
 .reviews__btn:hover .reviews__arrow-right {
   opacity: 1;
+}
+
+// .slider {
+//   position: relative;
+//   overflow: hidden;
+// }
+// .slider__wrapper {
+//   display: flex;
+// }
+// .slider__item {
+//   flex: 0 0 50%; /* определяет количество активных слайдов (в данном случае 2 */
+//   max-width: 40%; /* определяет количество активных слайдов (в данном случае 2 */
+// }
+
+.reviews__list button {
+  display: none;
+}
+
+.slick-list {
+  max-height: 100%;
 }
 

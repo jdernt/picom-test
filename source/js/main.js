@@ -12,16 +12,17 @@ numbers.forEach(number => number.textContent = '00' + (numbers.indexOf(number) +
 const burgerBtn = document.querySelector('.open-btn');
 const closeBtn = document.querySelector('.close-btn');
 const mobileMenu = document.querySelector('.mobile');
+const mobileBg = document.querySelector('.dark-bg');
 
 burgerBtn.addEventListener('click', function(){
-  // mobileMenu.classList.remove('hidden');
   mobileMenu.classList.add('transform-mobile');
+  mobileBg.classList.add('bg-visible');
   document.body.classList.add('no-scroll');
 });
 
 closeBtn.addEventListener('click', function(){
-  // mobileMenu.classList.add('hidden');
   mobileMenu.classList.remove('transform-mobile');
+  mobileBg.classList.remove('bg-visible');
   document.body.classList.remove('no-scroll');
 });
 
@@ -36,6 +37,7 @@ function smoothScroll(e){
 
   if (mobileMenu.classList.contains('transform-mobile')) {
     mobileMenu.classList.remove('transform-mobile');
+    mobileBg.classList.remove('bg-visible');
     document.body.classList.remove('no-scroll');
   };
 

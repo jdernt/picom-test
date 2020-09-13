@@ -136,6 +136,7 @@ gulp.task('scripts', () =>
 gulp.task('watch', () => {
   gulp.watch(Paths.sass.base, gulp.series('styles'));
   gulp.watch(Paths.img.src, gulp.series('img'));
+  gulp.watch(Paths.js.src, gulp.series('scripts'));
   // gulp.watch(Paths.img.src, gulp.series('img', 'server:refresh'));
   // gulp.watch(Paths.pug.src, gulp.series('pug', 'server:refresh'));
   // gulp.watch(Paths.sprite.src, gulp.series('img:sprite', 'pug', 'server:refresh'));

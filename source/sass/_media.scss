@@ -75,16 +75,6 @@
       -moz-transform-origin: left center;
     }
   }
-
-  .reviews {
-    &__comments {
-      // margin-right: 48px;
-    }
-
-    &__item {
-      // min-width: 0;
-    }
-  }
 }
 
 @media (max-width: 1160px) {
@@ -393,10 +383,23 @@
   .reviews {
     &__container {
       padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__comments {
+      margin-right: 0;
     }
 
     &__title {
       margin-bottom: 32px;
+    }
+  }
+
+  .mobile {
+    .main {
+      &__list {
+        font-size: 20px;
+      }
     }
   }
 }

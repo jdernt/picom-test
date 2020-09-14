@@ -67,12 +67,12 @@
     padding: 24px;
     @include transition(0.4s, all);
 
-    &:hover {
-      background-color: $header-hover;
-    }
+    // &:hover {
+    //   background-color: $header-hover;
+    // }
   }
 
-  &__input, input[type="search"] {
+  &__input {
     height: 100%;
     width: 0%;
     max-width: 447px;
@@ -105,6 +105,7 @@
   outline: none;
 }
 
+.header__form:hover,
 .header__input:focus .header__form {
   background-color: $header-hover;
 }

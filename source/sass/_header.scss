@@ -72,14 +72,14 @@
     }
   }
 
-  &__input {
+  &__input, input[type="search"] {
     height: 100%;
     width: 0%;
     max-width: 447px;
     padding: 28px 65px 28px 24px;
     font-family: $font-family;
     border: none;
-    border-radius: none;
+    border-radius: 0px;
     background-color: $header-bg;
     @include transition(0.6s, all);
 

@@ -59,102 +59,14 @@ function smoothScroll(e){
   };
 };
 
-// карусель отзывов
-// const leftBtn = document.querySelector('.left-btn');
-// const rightBtn = document.querySelector('.right-btn');
-// const reviewsList = document.querySelector('.reviews__list');
-// const reviewsCard = document.querySelector('.reviews__card');
-// const cards = document.querySelectorAll('.reviews__card');
+// input focus
+const searchInput = document.querySelector('.header__input');
+const searchForm = document.querySelector('.header__form');
 
-// const cardWidth = reviewsCard.scrollWidth;
-// const visibleListWidth = reviewsList.clientWidth;
-// const sumListWidth = reviewsList.scrollWidth;
+searchInput.onfocus = function () {
+  searchForm.classList.add('green-bg');
+};
 
-// let center = visibleListWidth / 2;
-
-// let cardCoords = {};
-// let listCoords = {};
-
-// function getCoords(elem) {
-//   const card = elem.getBoundingClientRect();
-//   let listPosition = reviewsList.getBoundingClientRect();
-
-//   listCoords = {
-//     top: listPosition.top + pageYOffset,
-//     left: listPosition.left + pageXOffset
-//   };
-
-//   cardCoords = {
-//     top: card.top + pageYOffset,
-//     left: card.left + pageXOffset - listCoords.left + card.width / 2
-//   };
-// };
-
-// function transformList(element) {
-//   let transform = reviewsList.style.transform;
-//   let transformNum = transform.match(/\d+/);
-//   let number;
-//   let anotherCard;
-
-//   getCoords(cards[element]);
-
-//   if (cards[count+1] === undefined) {
-//     let newTransformNum = sumListWidth - visibleListWidth;
-//     reviewsList.style.transform = 'translateX( -' + newTransformNum + 'px)';
-//   } else {
-//     count++;
-
-//     if (transformNum !== null) {
-//       for (i = 0; i < transformNum.length; i++) {
-//         number = Number(transformNum[i]);
-//         cardCoords.left = cardCoords.left - Math.abs(number);
-//         anotherCard = cardCoords.left - center;
-//       }
-//       let newTransformNum = number + anotherCard;
-//       if (Math.abs(newTransformNum) < sumListWidth) {
-//         reviewsList.style.transform = 'translateX( -' + newTransformNum + 'px)';
-//       }
-//     } else {
-//       anotherCard = cardCoords.left - center;
-//       reviewsList.style.transform = 'translateX( -' + anotherCard + 'px)';
-//     }
-//   };
-// }
-
-// leftBtn.addEventListener('click', function(){
-//   // let x = reviewsList.scrollLeft;
-//   // let i = 10;
-//   // let int = setInterval(function() {
-//   //   reviewsList.scrollTo(x, 0);
-//   //   x -= i;
-//   //   i += 10;
-//   //   if (i >= 640) clearInterval(int);
-//   // }, 50);
-//   let anotherCard = cardWidth * 2.5;
-//   anotherCard = anotherCard - center;
-//   let transform = reviewsList.style.transform;
-//   let transformNum = transform.match(/\d+/);
-//   let number;
-//   if (transformNum !== null) {
-//     for (i = 0; i < transformNum.length; i++) {
-//       number = Number(transformNum[i]);
-//     }
-//     console.log(number);
-//     let sumNum = number + anotherCard;
-//     if (Math.abs(sumNum) < sumListWidth) {
-//       reviewsList.style.transform = 'translateX(' + sumNum + 'px)';
-//     }
-//   }
-// });
-
-// let count = 2;
-// let one = 1;
-
-// rightBtn.addEventListener('click', function(){
-//   if (visibleListWidth > (cardWidth * 2)) {
-//     transformList(count);
-//   } else {
-//     transformList(one);
-//   }
-// });
-
+searchInput.onblur = function () {
+  searchForm.classList.remove('green-bg');
+};

@@ -1,12 +1,7 @@
 // отображение порядкового номера отзыва
 const reviewNumber = document.querySelectorAll('.reviews__number');
-let numbers = [];
 
-for (i = 0; i < reviewNumber.length; i++) {
-  numbers[i] = reviewNumber[i];
-};
-
-numbers.forEach(number => number.textContent = '00' + (numbers.indexOf(number) + 1));
+Array.from(reviewNumber).map((item, idx) => item.textContent = `00${idx+1}`);
 
 // мобильное меню
 const burgerBtn = document.querySelector('.open-btn');
